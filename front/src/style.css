@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: dimgray;
+    text-decoration: unset;
+}
+
+ul{
+    margin-left: 1,0.5rem;
+    list-style: none;
+}
+
+button,
+input[type="submit"] {
+    border: none;
+    background: none;
+    color: unset;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 1em;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+.page {
+    padding: 1rem;
+}
+/* header */
+#header {
+    background-color: #62acb5;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+#header .title {
+    margin: 0;
+    color: white;
+    padding: 0 1rem;
+}
+#header .options{
+    display: flex;
+    height: 100%;
+}
+#header .options button {
+    background-color: none;
+    width: 80px;
+} 
+#header .options button:hover {
+    background-color: cadetblue;
+}
+/*form */
+.form label,
+.form input{
+    display: block;
+}
+.form input{
+    margin-bottom: 1rem;
+}
+.form label{
+    margin-bottom: 0.2rem;
+}
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"] {
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid #c2c2c2;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    font-size: 1.1rem;
+
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form input:focus{
+    border: 1px solid #62acb5;
+    box-shadow: inset 0px 0px 5px rgb(98, 172, 181);
+}
+
+.form input[type="submit"]{
+    border: 2px solid rgb(98, 172, 181);
+    padding: 0.3rem 0.5rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: #b6dfe6;
+}
+
+/* error notice */
+.error-notice {
+    border: 2px solid #69a7b1;
+    background-color: #a1cbd1;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.error-notice button{
+    background-color: #5c9ba5;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #header .title{
+        font-size: 1.2rem;
+    }
+    #header .options button {
+        background-color: none;
+        width: 80px;
+        font-size: 0.9rem;
+    } 
+}
+
+td {
+    padding-bottom: 10px;
+    border: 1px solid black; 
+}
+tr{
+    width: 100%;
+}
+
+.col1 {
+    width: 10%;
+    text-align: center;
+}
+
+.col2 {
+    width: 25%;
+    text-align: center;
+}
+
+.col3 {
+    width: 25%;
+    text-align: center;
+}
+
+.col4 {
+    width: 25%;
+    text-align: center;
+}
+
+.col5 {
+    width: 8%;
+    text-align: center;
+}
+
